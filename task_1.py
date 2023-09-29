@@ -54,10 +54,10 @@ def save_to_json(json_filename):
         return wrapper
     return decorator
 
-# Генерируем CSV файл с данными
+
 generate_csv('data.csv', rows=100)
 
-# Применяем декораторы
+
 @quadratic_roots_decorator
 @save_to_json('results.json')
 def find_quadratic_roots(a, b, c):
